@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Agrandir";   /*Can be any text*/
+  src: local("Agrandir"),
+    url("./font/Agrandir-V3/Agrandir-GrandBold.otf") format("otf");
+}
