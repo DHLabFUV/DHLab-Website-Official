@@ -1,18 +1,14 @@
 // Footer.js
+import './footer.css';
 import React from 'react';
-import 'src/UI/footer/footer.css';
 import background from '../pic/background.png'
-
-import React from 'react';
 
 const Footer = () => {
   return (
-    <footer>
-      <div>
-        <p>This is the footer.</p>
-        <img  src={background} className='background' alt="background image"/>
-      </div>
-    </footer>
+    <><div>
+          <img src={background} className='background' alt="background image" /></div><div>
+              <p>Say Hello</p>
+          </div></>
   );
 };
 

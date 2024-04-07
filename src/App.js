@@ -6,7 +6,6 @@ import Footer from './UI/footer/footer';
 const App = () => {
   return (
     <><div>
-      <p>Content</p>
       <Footer/>
     </div><BrowserRouter>
         <Routes>
