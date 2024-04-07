@@ -1,14 +1,19 @@
 // Footer.js
 import './footer.css';
 import React from 'react';
-import background from '../pic/background.png'
 
 const Footer = () => {
   return (
-    <><div>
-          <img src={background} className='background' alt="background image" /></div><div>
-              <p>Say Hello</p>
-          </div></>
+    <footer className='background'>
+        <div className='grid-container'>
+            <div className='formlink'>
+                {/* Use <a> tag for external link */}
+                <a href='https://www.facebook.com/' target='_blank' rel='noopener noreferrer'>
+                Say Hello
+                </a>
+            </div>
+      </div>
+    </footer>
   );
 };
 
