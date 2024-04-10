@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -7,22 +9,27 @@ const Navbar = () => {
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen); // Toggle the menu open/close state
   };
 
   const handleOutsideClick = (event) => {
-    // Close the menu if it's open and the click is outside of the menu
-    if (isMenuOpen && menuRef.current && !menuRef.current.contains(event.target)) {
-      setIsMenuOpen(false);
+    // Check if the clicked element is outside the menu
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      setIsMenuOpen(false); // Close the menu if clicked outside
     }
   };
 
   useEffect(() => {
-    // Attach event listener to handle clicks outside of the menu
-    document.addEventListener('mousedown', handleOutsideClick);
+    if (isMenuOpen) {
+      // Attach event listener to handle clicks outside of the menu
+      document.addEventListener('mousedown', handleOutsideClick);
+    } else {
+      // Remove event listener when menu is closed
+      document.removeEventListener('mousedown', handleOutsideClick);
+    }
 
+    // Cleanup function to remove event listener on component unmount
     return () => {
-      // Clean up by removing the event listener on component unmount
       document.removeEventListener('mousedown', handleOutsideClick);
     };
   }, [isMenuOpen]); // Re-run effect whenever isMenuOpen changes
@@ -30,14 +37,26 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <button className="menu-button" onClick={toggleMenu}>
-        Menu
+        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
       </button>
       {isMenuOpen && (
         <div className="menu-screen" ref={menuRef}>
           <ul>
-            <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-            <li><Link to="/whoarewe" onClick={toggleMenu}>Who Are We</Link></li>
-            <li><Link to="/archives" onClick={toggleMenu}>Project Archives</Link></li>
+            <li>
+              <Link to="/" onClick={toggleMenu}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/whoarewe" onClick={toggleMenu}>
+                Who Are We
+              </Link>
+            </li>
+            <li>
+              <Link to="/archives" onClick={toggleMenu}>
+                Project Archives
+              </Link>
+            </li>
           </ul>
         </div>
       )}

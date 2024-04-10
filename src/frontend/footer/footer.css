@@ -2,6 +2,7 @@
     font-family: "Agrandir"; 
 }
 
+
 .background{ 
     background: url('../pic/background.png') no-repeat center center fixed; 
     background-position: center;
@@ -49,6 +50,7 @@ a span::after{
 
 a span:hover::after {
   transform: scaleX(1);
+
   transform-origin: bottom left;
 }
 

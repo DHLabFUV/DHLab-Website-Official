@@ -1,4 +1,7 @@
 /* Navbar.css */
+* {
+  font-family: 'Agrandir-Grand';
+}
 
 .navbar {
   display: flex;
@@ -10,11 +13,10 @@
 }
 
 .menu-button {
-  background-color: #555;
+  background-color: transparent;
   color: #fff;
-  padding: 10px 20px;
   border: none;
-  cursor: pointer;
+  transition: transform 0.6s ease; /* Transition for icon transform */
 }
 
 .menu-screen {
@@ -32,10 +34,19 @@
 .menu-screen ul {
   list-style-type: none;
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .menu-screen ul li {
-  margin: 10px;
-  font-size: 18px;
+  font-weight: 'Grand-Bold';
+  margin: 50px;
+  font-size: 40px;
+  -webkit-text-stroke: 1px white; /* White stroke */
+  color: transparent; /* Hide the text color */
+  transition: color 0.3s ease; /* Transition for text color change */
+}
+
+.menu-screen ul li:hover {
+  color: white; /* Show white text color on hover */
+  -webkit-text-fill-color: white; /* Fill the text color on hover */
 }

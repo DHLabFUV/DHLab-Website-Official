@@ -8,7 +8,8 @@ const Footer = () => {
         <div className='grid-container'>
             <div className='formlink'>
                 {/* Use <a> tag for external link */}
-                <a href='https://www.facebook.com/' target='_blank' rel='noopener noreferrer'>
+                <a href='https://www.facebook.com/'>
+                    <span className='font-sec'>Say Hello</span>
                 Say Hello
                 </a>
             </div>
