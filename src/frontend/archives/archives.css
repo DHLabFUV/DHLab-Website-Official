@@ -1,0 +1,9 @@
+.body {
+    font-size: 16px;
+  }
+  
+.proj-nums {
+    font-size: 5vw; /* Responsive heading size */
+    padding: auto;
+}
+  

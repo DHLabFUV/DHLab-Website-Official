@@ -1,0 +1,29 @@
+.toggle-list {
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  li.active {
+    background-color: aliceblue;
+
+  }
+  
+  .additional-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  .image-item{
+    width: 100px;
+    height: 100px;
+  }
+  
