@@ -1,5 +1,48 @@
 @font-face {
   font-family: "Agrandir";   /*Can be any text*/
   src: local("Agrandir"),
-    url("./font/Agrandir-V3/Agrandir-GrandBold.otf") format("otf");
+  url("./font/Agrandir-V3/Agrandir-GrandBold.otf") format("otf");
+}
+
+body {
+  font-family: Agrandir;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.left-sidebar, .right-sidebar {
+  flex: 1 0 200px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.content {
+  flex: 2 0 400px;
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
