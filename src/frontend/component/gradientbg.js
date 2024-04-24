@@ -2,7 +2,8 @@ import React from 'react';
 
 const VerticalGradientBackground = () => {
   const gradientStyle = {
-    background: 'linear-gradient(to top, #ff7e5f, #feb47b)', // Define the vertical gradient
+    background: `linear-gradient(to top, rgba(0, 15, 98, 1), 
+    rgba(4, 50, 141, 0.8), rgba(8, 84, 185, 0))`, // Define the gradient with transparent end
     minHeight: '100vh', // Set minimum height to full viewport height
     display: 'flex',
     justifyContent: 'center',
