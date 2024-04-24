@@ -27,11 +27,14 @@ const Archives = () => {
     },
   ];
   return (
-    <><VerticalGradientBackground /><div className='page-content'>
-      <h1 className='proj-nums'>10 projects</h1>
-      <p className='intro'>With dedication and love, we present our project to help raise public awareness of Vietnam product and Vietnam soul</p>
-      <ToggleList items={items} />
-    </div></>
+    <div className="container">
+      <VerticalGradientBackground /> {/* Render the gradient background */}
+      <div className="content">
+        <h1 className="proj-nums">10 projects</h1>
+        <p className="intro">With dedication and love, we present our project to help raise public awareness of Vietnam product and Vietnam soul</p>
+        <ToggleList items={items} />
+      </div>
+    </div>
   );
 }
 

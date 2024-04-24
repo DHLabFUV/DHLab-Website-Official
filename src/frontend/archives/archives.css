@@ -2,6 +2,10 @@ body {
   font-size: 20px;
 }
 
+.container {
+  position: relative; /* Set position relative for absolute positioning */
+}
+
 .page-content{
   padding: 10%;
 }
