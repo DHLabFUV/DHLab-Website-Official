@@ -26,8 +26,8 @@ const ToggleList = ({ items }) => {
           >
             {item.title}
             {openItem === item.id && <p className="additional-content">
-                <p>{item.content}</p>
-                <img src={item.imageUrl} alt="Additional" className='image-item' />
+              <img src={item.imageUrl} alt="Additional" className='image-item' />
+              <div><p>{item.content}</p></div>
             </p>}
           </li>
         ))}

@@ -1,9 +1,14 @@
-.body {
-    font-size: 16px;
-  }
+body {
+  font-size: 20px;
+}
+
+.page-content{
+  padding: 10%;
+}
   
 .proj-nums {
-    font-size: 5vw; /* Responsive heading size */
-    padding: auto;
+  font-size: 5vw; /* Responsive heading size */
+  padding: auto;
 }
+
   
