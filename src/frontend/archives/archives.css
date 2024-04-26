@@ -2,8 +2,17 @@ body {
   font-size: 20px;
 }
 
-.container {
-  position: relative; /* Set position relative for absolute positioning */
+.background {
+  /* Set the background image or color */
+  background-image: url('../pic/1.jpg'); /* or background-color: #XXXXXX; */
+  background-size: cover; /* Ensure the background covers the entire area */
+  background-position: center; /* Center the background image */
+  height: 100vh; /* Set the height to the viewport height */
+
+}
+
+.content{
+  padding: 5%;
 }
 
 .page-content{
@@ -11,8 +20,12 @@ body {
 }
   
 .proj-nums {
-  font-size: 5vw; /* Responsive heading size */
+  font-size: 3vw; /* Responsive heading size */
   padding: auto;
+}
+
+.intro {
+  padding: 5%;
 }
 
   
