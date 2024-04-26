@@ -1,18 +1,32 @@
 body {
+  color: #fff;
   font-size: 20px;
 }
 
-.container {
-  position: relative; /* Set position relative for absolute positioning */
+.background {
+  /* Set the background image or color */
+  background-image: url('../pic/1.jpg'); /* or background-color: #XXXXXX; */
+  background-size: cover; /* Ensure the background covers the entire area */
+  background-position: center; /* Center the background image */
+  height: 100vh; /* Set the height to the viewport height */
+
 }
 
-.page-content{
-  padding: 10%;
+.content{
+  background: linear-gradient(to top, rgba(0, 15, 98, 1), rgba(4, 50, 141, 0.8), rgba(8, 84, 185, 0));
+  /* For older browsers */
+  background: -webkit-linear-gradient(bottom, rgba(0, 15, 98, 1), rgba(4, 50, 141, 0.8), rgba(8, 84, 185, 0));
+  /* Ensure the gradient covers the entire viewport */
+  height: 100vh;
+  padding: 5%;
 }
   
 .proj-nums {
   font-size: 5vw; /* Responsive heading size */
-  padding: auto;
+}
+
+.intro {
+  font-size: 3vw;
 }
 
   

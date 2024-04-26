@@ -1,7 +1,6 @@
 import React from 'react';
 import './archives.css';
 import ToggleList from './togglelist';
-import VerticalGradientBackground from '../component/gradientbg';
 
 const Archives = () => {
   const items = [
@@ -27,13 +26,12 @@ const Archives = () => {
     },
   ];
   return (
-    <div className="container">
-      <VerticalGradientBackground /> {/* Render the gradient background */}
+    <div className='background'>
       <div className="content">
-        <h1 className="proj-nums">10 projects</h1>
-        <p className="intro">With dedication and love, we present our project to help raise public awareness of Vietnam product and Vietnam soul</p>
-        <ToggleList items={items} />
-      </div>
+          <h1 className="proj-nums">10 projects</h1>
+          <p className="intro">With dedication and love, we present our project to help raise public awareness of Vietnam product and Vietnam soul</p>
+          <ToggleList items={items} />
+        </div>
     </div>
   );
 }
