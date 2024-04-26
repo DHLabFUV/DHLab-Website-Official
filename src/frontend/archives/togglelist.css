@@ -10,18 +10,18 @@
   li {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50%;
+    gap: 80%;
     justify-content: center;
     align-items: center;
-    font-size: 3vw;
+    font-size: 2vw;
+    padding: 2%;
     cursor: pointer;
-    padding: 20px;
     border-bottom: 1px solid #ccc;
   }
   
   li.active {
     /* background-color: aliceblue; */
-    padding: 10px;
+    padding: 2%px;
   }
   
   .additional-content {
