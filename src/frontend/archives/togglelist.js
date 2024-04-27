@@ -24,8 +24,8 @@ const ToggleList = ({ items }) => {
             onClick={() => toggleItem(item.id)}
             className={openItem === item.id ? 'active' : ''}
           >
-            <span>{item.title}</span>
-            <span>{item.time}</span>
+            <span className='title'>{item.title}</span>
+            <span className='time'>{item.time}</span>
             {openItem === item.id && <p className="additional-content">
               <img src={item.imageUrl} alt="Additional" className='image-item' />
               <p>{item.content}</p>
