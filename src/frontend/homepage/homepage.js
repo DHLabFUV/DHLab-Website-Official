@@ -1,10 +1,10 @@
 import React from 'react';
-import NewsletterSubscription from '../component/footnote';
+import inputEmail from '../component/email';
 
 function HomePage() {
   return (
     <div>
-      <NewsletterSubscription />
+      <inputEmail />
       <h2>This is the Home Page</h2>
     </div>
   );
