@@ -1,6 +1,5 @@
-@ -1,37 +0,0 @@
 import React, { useState } from 'react';
-import './footnote.css'
+import './footnote.css';
 
 function NewsletterSubscription() {
   const [email, setEmail] = useState('');
