@@ -3,6 +3,7 @@ import './navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import Logo from '../pic/logo.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,9 +37,16 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <button className="menu-button" onClick={toggleMenu}>
-        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
+      <div className='navbar-left'>
+        <a href="/home" className="logo">
+          <img src ={Logo} alt='Logo' />
+        </a>
+      </div>
+      <div className='navbar-right'>
+       <button className="menu-button" onClick={toggleMenu}>
+       <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
       </button>
+      </div>
       {isMenuOpen && (
         <div className="menu-screen" ref={menuRef}>
           <ul>

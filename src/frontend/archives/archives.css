@@ -1,6 +1,7 @@
 body {
   color: #fff;
   font-size: 20px;
+  font-family: "Epilogue", sans-serif;
 }
 
 .background {
@@ -18,15 +19,20 @@ body {
   background: -webkit-linear-gradient(bottom, rgba(0, 15, 98, 1), rgba(4, 50, 141, 0.8), rgba(8, 84, 185, 0));
   /* Ensure the gradient covers the entire viewport */
   height: 100vh;
-  padding: 8%;
+  padding: 7%;
 }
   
-.proj-nums {
+.headline {
   font-size: 5vw; /* Responsive heading size */
+  font-weight: 700;
+
+  padding-top: -5%;
+  padding-bottom: -2%;
 }
 
 .intro {
   font-size: 2vw;
+  font-weight: 400;
 }
 
   
