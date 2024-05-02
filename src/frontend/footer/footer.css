@@ -1,7 +1,7 @@
-* {
-    font-family: "Agrandir"; 
+body{
+    font-family: "Epilogue", sans-serif;
+    font-weight: 600;
 }
-
 
 .background{ 
     background: url('../pic/background.png') no-repeat center center fixed; 
@@ -24,33 +24,23 @@
     left: 2rem;
 }
 
-a {
-    font-family: 'Agrandir-Grand';
-    font-size: 60;
-    font-weight: 600;
+.link{
+    padding: 10%;
 }
 
-a span{
-    display: inline-block;
-    position: relative;
-    color: white;
+span {
+    background: linear-gradient(0deg, rgba(0, 15, 98, 1), rgba(8, 84, 185, 1)) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
 }
 
-a span::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-a span:hover::after {
-  transform: scaleX(1);
-
-  transform-origin: bottom left;
-}
-
+span:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+   
+span {
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+  }
