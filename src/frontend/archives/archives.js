@@ -8,6 +8,7 @@ import image3 from '../pic/6.jpg';
 import bg1 from '../pic/1.jpg';
 import bg2 from '../pic/2.jpg';
 import bg3 from '../pic/3.jpg';
+import Footer from '../footer/footer';
 
 const Archives = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // State to track the current image index
@@ -67,13 +68,13 @@ const Archives = () => {
   ];
 
   return (
-    <div className='background' style={{backgroundImage: `url(${currentImage})`}}>
+    <><div className='background' style={{ backgroundImage: `url(${currentImage})` }}>
       <div className="content">
         <h1 className="headline">10 projects</h1>
         <p className="intro">With dedication and love, we present our project to help raise public awareness of Vietnam product and Vietnam soul</p>
         <ToggleList items={items} />
       </div>
-    </div>
+    </div><Footer /></>
   );
 }
 

@@ -10,6 +10,7 @@ body {
   background-size: cover; /* Ensure the background covers the entire area */
   background-position: center; /* Center the background image */
   height: 100vh; /* Set the height to the viewport height */
+  position: relative;
 
 }
 
