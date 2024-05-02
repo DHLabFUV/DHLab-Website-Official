@@ -30,6 +30,7 @@ body{
   background-color: #000;
   opacity: 80%;
   align-items: center;
+  font-size: 80px;
 }
 
 .menu-screen ul {
@@ -41,7 +42,7 @@ body{
 .menu-screen ul li {
   font-weight: 'Grand-Bold';
   margin: 50px;
-  font-size: 40px;
+  font-size: 4.5vw;
   -webkit-text-stroke: 1px white; /* White stroke */
   color: transparent; /* Hide the text color */
   transition: color 0.3s ease; /* Transition for text color change */
