@@ -1,17 +1,23 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'; //stylesheet
-import Footer from './UI/footer/footer';
+import Navbar from './frontend/navbar/navbar';
+import WhoAreWe from './frontend/whoarewe/whoarewe';
+import Archives from './frontend/archives/archives';
+import HomePage from './frontend/homepage/homepage';
 
 const App = () => {
   return (
-    <><div>
-      <Footer/>
-    </div><BrowserRouter>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
         <Routes>
-          <Route path="/footer" element={<Footer />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/whoarewe" element={<WhoAreWe />} />
+          <Route path="/archives" element={<Archives />} />
         </Routes>
-      </BrowserRouter></>
+      </div>
+    </BrowserRouter>
   );
 };
 
