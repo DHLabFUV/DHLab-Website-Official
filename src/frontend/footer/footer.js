@@ -22,20 +22,20 @@ const Footer = () => {
         </div>
         <div className='grid-container'>
           <div class="grid-item">
+            <h4>Founder</h4>
             <h3>Vu An-Lam</h3>
-            <h3>Founder</h3>
             <p>Email: founder1@example.com</p>
             <p>Phone: 123-456-7890</p>
           </div>
           <div class="grid-item">
-            <h3>Hoa Leo</h3>
             <h4>Lead of Communication Department</h4>
+            <h3>Thuy Linh-Hoa Thi</h3>
             <p>Email: founder2@example.com</p>
             <p>Phone: 123-456-7890</p>
           </div>
           <div class="grid-item">
-            <h3>Phuong Anh-Pham Doan</h3>
             <h4>Tech Lead and Project Manager</h4>
+            <h3>Phuong Anh-Pham Doan</h3>
             <p>Email: founder3@example.com</p>
             <p>Phone: 123-456-7890</p>
           </div>

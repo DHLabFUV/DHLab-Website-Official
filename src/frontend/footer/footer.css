@@ -10,18 +10,27 @@ body{
   }
   
 .grid-item {
-    text-align: center;
+    text-align: left;
     flex: 1;
-    padding: 0 10%;
-    max-width: 20%; /* Optionally, set a max-width for each grid item */
+    padding: 5% 3%;
+    max-width: 18%; /* Optionally, set a max-width for each grid item */
     font-size: 1vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+p{
+  font-weight: 300;
+
 }
 
 .link {
     color: #fff;
     position: relative;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 3vw;
   }
   
 .link::before {
@@ -37,10 +46,3 @@ body{
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
   }
-  
-.link:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-  
-  
