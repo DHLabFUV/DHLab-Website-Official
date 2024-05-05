@@ -14,18 +14,20 @@ body{
     flex: 1;
     padding: 5% 3%;
     max-width: 18%; /* Optionally, set a max-width for each grid item */
-    font-size: 1vw;
+    font-size: 0.75vw;
 }
 
 h3 {
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 p{
   font-weight: 300;
-
 }
 
+h4{
+  max-width: 50%;
+}
 .link {
     color: #fff;
     position: relative;
