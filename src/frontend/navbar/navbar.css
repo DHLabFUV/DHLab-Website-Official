@@ -82,3 +82,17 @@ body{
   height: 10%;
   width: auto;
 }
+
+/* Navbar.css */
+
+/* Add styles for social media icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  padding: 10%;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 10px; /* Adjust spacing between icons */
+}

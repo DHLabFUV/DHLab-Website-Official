@@ -1,6 +1,7 @@
-// Footer.js
 import './footer.css';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   const footerStyle = {
@@ -17,26 +18,41 @@ const Footer = () => {
     <footer style={footerStyle}>
       <div className='container'>
         <div className='sayhello-container'>
-                {/* Use <a> tag for external link */}
-                <a href='https://www.facebook.com/'className='link'>Say Hello</a>               
+          {/* Use <a> tag for external link */}
+          <a href='https://www.facebook.com/' className='link'>Say Hello</a>
+          {/* Add social media icons */}
         </div>
         <div className='grid-container'>
-          <div class="grid-item">
+          <div className="grid-item">
             <h4>Founder</h4>
             <h3>Vu An-Lam</h3>
             <p>Email: founder1@example.com</p>
           </div>
-          <div class="grid-item">
+          <div className="grid-item">
             <h4>Lead of Communication Department</h4>
             <h3>Thuy Linh-Hoa Thi</h3>
             <p>Email: founder2@example.com</p>
           </div>
-          <div class="grid-item">
+          <div className="grid-item">
             <h4>Tech Lead and Project Manager</h4>
             <h3>Phuong Anh-Pham Doan</h3>
             <p>Email: pdpa.work@gmail.com</p>
           </div>
         </div>
+        <div className="social-icons">
+            <a href="https://www.facebook.com/">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="https://twitter.com/">
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a href="https://www.instagram.com/">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="https://www.linkedin.com/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </div>
       </div>
     </footer>
   );

@@ -55,5 +55,21 @@ h4{
   }
 
 
+/* Footer.css */
+
+/* Add styles for social media icons */
+.social-icons {
+  display: flex;
+  justify-content: left;
+  margin-top: 2%; /* Adjust spacing between content and icons */
+  padding: 6%;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 2%; /* Adjust spacing between icons */
+}
+
+
   
   
