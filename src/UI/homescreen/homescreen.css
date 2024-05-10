@@ -102,9 +102,9 @@
   }
   
   .intro-head h2 {
-    font-size: 1.7em; /* Even smaller size for 'What is' */
-    font-weight: 300; /* Thin weight, assuming you have a font that supports this weight */
-    color: white; /* Lighter color for 'What is' */
+    font-size: 1.7em; 
+    font-weight: 300; 
+    color: white; 
   }
   
   .intro-head h1{
@@ -150,29 +150,29 @@
     width: 100%; /* Adjust width as necessary */
     max-width: 400px; /* Maximum size of the image */
     height: auto; /* Maintain the aspect ratio */
-    margin-bottom: 20px; /* Space below the image */
-    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; 
+    border-radius: 8px; 
     transform: translateX(30%)  rotate(-8deg);
   }
   .secondcol img {
-    width: 100%; /* Adjust width as necessary */
-    max-width: 400px; /* Maximum size of the image */
-    height: auto; /* Maintain the aspect ratio */
-    margin-bottom: 20px; /* Space below the image */
-    border-radius: 8px; /* Rounded corners */
+    width: 100%; 
+    max-width: 400px;
+    height: auto; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
     transform: translateX(-30%)  rotate(5deg);
   }
   
   .firstcol h2,.secondcol h2 {
     padding: 128px;
-    font-weight: 300; /* Thin weight, assuming you have a font that supports this weight */
-    color: white; /* Lighter color for 'What is' */
-    font-size: 1.5em; /* Giảm kích thước phông chữ */
-    line-height: 1.2; /* Điều chỉnh khoảng cách giữa các dòng */
-    letter-spacing: 0.5px; /* Điều chỉnh khoảng cách giữa các chữ cái */
-    max-width: 80%; /* Giới hạn độ rộng tối đa của văn bản */
-    margin-left: auto; /* Căn giữa văn bản trong khối */
-    margin-right: auto; /* Căn giữa văn bản trong khối */
+    font-weight: 300; 
+    color: white; 
+    font-size: 1.5em; 
+    line-height: 1.2; 
+    letter-spacing: 0.5px; 
+    max-width: 80%; 
+    margin-left: auto; 
+    margin-right: auto; 
     text-align: justify;
   }
   
@@ -186,12 +186,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    height: 600px; /* Set a fixed height for the footer */
+    height: 600px; 
   }
   
   .footer img {
-    flex: 1; /* Allow each image to grow and take up equal space */
-    max-height: 100%; /* Max height of images to fit footer height */
-    object-fit: cover; /* Cover the area of the image container without stretching */
+    flex: 1; 
+    max-height: 100%; 
+    object-fit: cover; 
   }
   
