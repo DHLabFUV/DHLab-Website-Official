@@ -1,0 +1,308 @@
+    /* Background */
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* Extend background for scrolling */
+    html,
+    body {
+        height: auto;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Main {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        /* Ensure the header is above the background */
+    }
+
+    /* Heading and menu */
+    .header-pos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+        margin-bottom: 64px;
+
+    }
+
+    .logo {
+        height: 40px;
+        width: auto;
+    }
+
+    .menu {
+        height: 40px;
+        font-size: 24px;
+        /* Adjust the size as needed */
+        color: white;
+        /* Choose a color that stands out from your background */
+    }
+
+
+
+
+
+    /* Lines and Text Styling */
+
+    .line {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .horizontal-line {
+        height: 1px;
+        background-color: white;
+        width: 100%;
+        margin: 0 128px;
+    }
+
+    .title-section {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        color: white;
+        padding: 20px 0;
+        margin: 0 128px;
+
+
+        /* Space above and below the text */
+    }
+
+    .title-section h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 64px;
+
+        /* Adjust size as needed */
+    }
+
+    .title-section p {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        text-align: right;
+        /* Adjust size as needed */
+    }
+
+
+
+
+
+    /* Profile */
+
+    .profile {
+        display: flex;
+        justify-content: space-between;
+        /* Centers items and allows control over spacing with padding */
+        flex-wrap: wrap;
+        /* Allows boxes to wrap into the next line on smaller screens */
+        margin: 128px 128px;
+        align-items: flex-start;
+    }
+
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        /* Center items horizontally */
+        text-align: left;
+        /* Text align center */
+        width: 24%;
+        /* Assuming four boxes should fit horizontally */
+        margin-bottom: 20px;
+        /* Adds space below each box */
+    }
+
+    .pic_profile {
+        height: 320px;
+        /* Fixed height for all images */
+        width: auto;
+        /* Width automatically adjusts to maintain aspect ratio */
+        object-fit: cover;
+        /* Ensures the image covers the area without distorting the aspect ratio */
+        border-top-left-radius: 0;
+        /* Rounded top-left corner */
+        border-top-right-radius: 30px;
+        /* Rounded top-right corner */
+        border-bottom-right-radius: 30px;
+        /* Rounded bottom-right corner */
+        border-bottom-left-radius: 30px;
+        /* Square bottom-left corner */
+    }
+
+
+    .box h1 {
+        color: white;
+        /* Adjust based on your design needs */
+        margin-top: 12px;
+        font-size: 1.5rem;
+        /* Larger font size for visibility */
+
+        border: 2px solid white;
+        /* Border width and color */
+        border-radius: 40px;
+        /* Roundness of the corners */
+        padding: 8px 16px;
+        /* Padding inside the border */
+        display: inline-block;
+        /* Optional: to give it a glow effect */
+    }
+
+    .box p {
+        color: white;
+        /* Adjust based on your design needs */
+        font-size: 1rem;
+        /* Readable text size */
+        margin-top: 0;
+        padding: 0 16px;
+    }
+
+
+
+
+    /* Each Profile */
+
+    .each_profile {
+        /* Centers items and allows control over spacing with padding */
+        /* Allows boxes to wrap into the next line on smaller screens */
+        margin: 200px 128px;
+    }
+
+    .each_profile_heading {
+        color: white;
+        font-weight: 700;
+    }
+
+    .each_profile_des {
+        color: white;
+        width: 50%;
+        margin-top: 48px;
+        margin-bottom: 32px;
+    }
+
+    .each_profile_box {
+        flex-direction: column;
+        text-align: left;
+        width: 28%;
+        margin-bottom: 20px;
+        /* Adds space below each box */
+    }
+
+    .image_container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .big_pic{
+        position: relative;
+    }
+    
+
+
+
+    .big_pic .name {
+        position: absolute;
+        bottom: 15%;
+        right: 62%;
+    } 
+
+    .big_pic .description {
+        position: absolute;
+        bottom: 4%;
+        right: 45%;
+    } 
+    
+    .small_pic{
+        position: relative;
+    }
+
+    .small_pic .name{
+        position: absolute;
+        bottom: 5%;
+    }
+
+    .name h1, .description p {
+        color: white; /* Or any color that fits the design */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal shadow, Vertical shadow, Blur, Color */
+    }
+
+    .pic_profile_big {
+        width: 600px;
+        height: 400px;
+        object-fit: cover;
+        border-top-left-radius: 0;
+        /* Rounded top-left corner */
+        border-top-right-radius: 30px;
+        /* Rounded top-right corner */
+        border-bottom-right-radius: 30px;
+        /* Rounded bottom-right corner */
+        border-bottom-left-radius: 30px;
+        /* Square bottom-left corner */
+    }
+
+    .pic_profile_small {
+        width: 200px;
+        height: 400px;
+        object-fit: cover;
+        border-top-left-radius: 0;
+        /* Rounded top-left corner */
+        border-top-right-radius: 30px;
+        /* Rounded top-right corner */
+        border-bottom-right-radius: 30px;
+        /* Rounded bottom-right corner */
+        border-bottom-left-radius: 30px;
+        /* Square bottom-left corner */
+    }
+
+    .each_profile_box h1 {
+        color: white;
+    }
+
+    .each_profile_box p {
+        color: white;
+
+    }
+
+
+
+    /* Image description */
+    .image_container h1 {
+        color: white;
+        /* Adjust based on your design needs */
+        margin-top: 12px;
+        font-size: 1.5rem;
+        /* Larger font size for visibility */
+
+        border: 2px solid white;
+        /* Border width and color */
+        border-radius: 40px;
+        /* Roundness of the corners */
+        padding: 8px 16px;
+        /* Padding inside the border */
+        display: inline-block;
+        /* Optional: to give it a glow effect */
+    }
+
+
+    .image_container p {
+        color: white;
+        /* Adjust based on your design needs */
+        font-size: 1rem;
+        /* Readable text size */
+        margin-top: 0;
+        padding: 0 16px;
+    }

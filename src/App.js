@@ -3,11 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'; //stylesheet
 import Footer from './UI/footer/footer';
 import Homescreen from './UI/homescreen/homescreen';
+import Whoweare from './UI/whoweare/whoweare';
 const App = () => {
   return (
     <><div>
       {/* <Footer/> */}
-      <Homescreen/>
+      {/* <Homescreen/> */}
+      <Whoweare/>
     </div><BrowserRouter>
         <Routes>
           <Route path="/footer" element={<Footer />} />
@@ -15,5 +17,5 @@ const App = () => {
       </BrowserRouter></>
   );
 };
-
+  
 export default App;
