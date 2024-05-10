@@ -4,6 +4,7 @@
 
     npm install 
     npm start
+    npm i --save @fortawesome/free-brands-svg-icons
 
 
 ### People of this project
