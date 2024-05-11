@@ -15,7 +15,7 @@
       <div className="whoweare">
         <img src={background} className='background' alt="background" />
 
-        <div className="Main">
+        <div className="container">
           {/* Header */}
           <div className='header-pos'>
             <img src={logo} className="logo" alt="Digital Humanities Lab logo" />
@@ -46,7 +46,7 @@
 
           <div className="profile">
             <div className="box">
-              <img src={wwa1} alt="President Office Picture" className='pic_profile' style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' }} />
+              <img src={wwa1} alt="President Office " className='pic_profile' style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' }} />
               <div className="name">
                 <h1>President Office</h1>
               </div>
@@ -55,7 +55,7 @@
               </div>
             </div>
             <div className="box">
-              <img src={wwa_main1} alt="President Office Picture" className='pic_profile' style={{ filter: 'sepia(1) hue-rotate(90deg)' }} />
+              <img src={wwa_main1} alt="President Office " className='pic_profile' style={{ filter: 'sepia(1) hue-rotate(90deg)' }} />
               <div className="name">
                 <h1>Communication Office</h1>
               </div>
@@ -64,7 +64,7 @@
               </div>
             </div>
             <div className="box">
-              <img src={wwa3} alt="President Office Picture" className='pic_profile' style={{ filter: 'sepia(0.5) hue-rotate(50deg) saturate(1.5) brightness(0.9)' }} />
+              <img src={wwa3} alt="President Office " className='pic_profile' style={{ filter: 'sepia(0.5) hue-rotate(50deg) saturate(1.5) brightness(0.9)' }} />
               <div className="name">
                 <h1>Project Development</h1>
               </div>
@@ -73,7 +73,7 @@
               </div>
             </div>
             <div className="box">
-              <img src={wwa4} alt="President Office Picture" className='pic_profile' style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)' }} />
+              <img src={wwa4} alt="President Office " className='pic_profile' style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)' }} />
               <div className="name">
                 <h1>Research Office</h1>
               </div>
@@ -92,7 +92,7 @@
             </div>
             <div className="image_container">
               <div className="big_pic">
-                <img src={wwa_main1} alt="President Office Picture" className='pic_profile_big' style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.2)  brightness(0.8) ' }} />
+                <img src={wwa_main1} alt="President Office " className='pic_profile_big' style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.2)  brightness(0.8) ' }} />
                 <div className="name">
                   <h1>Person Name</h1>
                 </div>
@@ -101,21 +101,21 @@
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.2)  brightness(0.8) ' }} />
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.2)  brightness(0.8) ' }} />
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small'style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.2)  brightness(0.8) ' }} />
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small'style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.2)  brightness(0.8) ' }} />
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.2)  brightness(0.8) ' }}/>
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.2)  brightness(0.8) ' }}/>
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@
             </div>
             <div className="image_container">
               <div className="big_pic">
-                <img src={wwa_main1} alt="President Office Picture" className='pic_profile_big' style={{ filter: 'sepia(1) hue-rotate(90deg)' }} />
+                <img src={wwa_main1} alt="President Office " className='pic_profile_big' style={{ filter: 'sepia(1) hue-rotate(90deg)' }} />
                 <div className="name">
                   <h1>Person Name</h1>
                 </div>
@@ -140,21 +140,21 @@
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(90deg) ' }} />
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(90deg) ' }} />
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small'style={{ filter: 'sepia(1) hue-rotate(90deg) ' }} />
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small'style={{ filter: 'sepia(1) hue-rotate(90deg) ' }} />
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(90deg) ' }}/>
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(90deg) ' }}/>
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
             </div>
@@ -170,7 +170,7 @@
             </div>
             <div className="image_container">
               <div className="big_pic">
-                <img src={wwa_main1} alt="President Office Picture" className='pic_profile_big' style={{ filter:'sepia(1) hue-rotate(58eg) saturate(2) brightness(1.1)' }}/>
+                <img src={wwa_main1} alt="President Office " className='pic_profile_big' style={{ filter:'sepia(1) hue-rotate(58eg) saturate(2) brightness(1.1)' }}/>
                 <div className="name">
                   <h1>Person Name</h1>
                 </div>
@@ -179,21 +179,21 @@
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(58deg) saturate(2) brightness(1.1)'  }} />
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(58deg) saturate(2) brightness(1.1)'  }} />
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small'style={{ filter: 'sepia(1) hue-rotate(58deg) saturate(2) brightness(1.1)'  }} />
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small'style={{ filter: 'sepia(1) hue-rotate(58deg) saturate(2) brightness(1.1)'  }} />
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(58deg) saturate(2) brightness(1.1)'  }}/>
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(58deg) saturate(2) brightness(1.1)'  }}/>
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
             </div>
@@ -208,7 +208,7 @@
             </div>
             <div className="image_container">
               <div className="big_pic">
-                <img src={wwa_main1} alt="President Office Picture" className='pic_profile_big' style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)'}} />
+                <img src={wwa_main1} alt="President Office " className='pic_profile_big' style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)'}} />
                 <div className="name">
                   <h1>Person Name</h1>
                 </div>
@@ -217,21 +217,21 @@
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)'}} />
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)'}} />
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small'style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)'}} />
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small'style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)'}} />
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
               <div className="small_pic">
-                <img src={wwa_main_2} alt="President Office Picture" className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)'}}/>
+                <img src={wwa_main_2} alt="President Office " className='pic_profile_small' style={{ filter: 'sepia(1) hue-rotate(-40deg) saturate(2) brightness(0.9)'}}/>
                 <div className="name">
-                  <h1>Personname</h1>
+                  <h1>Person Name</h1>
                 </div>
               </div>
             </div>

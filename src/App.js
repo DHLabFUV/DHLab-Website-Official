@@ -11,7 +11,7 @@ const App = () => {
       {/* <Homescreen/> */}
       <Whoweare/>
     </div><BrowserRouter>
-        <Routes>
+        <Routes>x``
           <Route path="/footer" element={<Footer />} />
         </Routes>
       </BrowserRouter></>

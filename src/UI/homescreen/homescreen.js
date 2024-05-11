@@ -24,7 +24,7 @@ const Homescreen = () => {
             </div>
             <div className='content-container'>
                 <div className="bubble3d">
-                    <img src={bubble3d} alt="3D Bubble image" />
+                    <img src={bubble3d} alt="3D Bubble " />
                     <div className="text-content">
                         <h1>
                             Digital Humanities Lab
@@ -59,9 +59,9 @@ const Homescreen = () => {
             </div>
 
             <div className="footer">
-                <img src={footer1} alt="Footer Image 1" />
-                <img src={footer2} alt="Footer Image 2" />
-                <img src={footer3} alt="Footer Image 3" />
+                <img src={footer1} alt="Footer 1" />
+                <img src={footer2} alt="Footer 2" />
+                <img src={footer3} alt="Footer 3" />
             </div>
         </div>
     );

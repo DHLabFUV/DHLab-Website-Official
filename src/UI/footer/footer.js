@@ -6,7 +6,7 @@ import background from '../pic/background.png'
 const Footer = () => {
   return (
     <><div>
-          <img src={background} className='background' alt="background image" /></div><div>
+          <img src={background} className='background' alt="background" /></div><div>
               <p>Say Hello</p>
           </div></>
   );

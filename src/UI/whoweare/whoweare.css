@@ -1,3 +1,21 @@
+    :root {
+        --logo: 48px;
+        --menu: 24px;
+        --margin-main: 64px;
+
+        --title-h1: 64px;
+        --title-p: 20px;
+        --box-width: 24%;
+        --pic-profile-height: 320px;
+        --box-h1: 20px;
+        --box-p: 16px;
+        --pic_profile_big_width: 500px;
+        --pic_profile_big_height: 400px;
+        --pic_profile_small_width: 200px;
+        --pic_profile_small_height: 400px;
+        --margin-each-profile: 200px;
+    }
+
     /* Background */
 
     .background {
@@ -19,13 +37,7 @@
         padding: 0;
     }
 
-    .Main {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10;
-        /* Ensure the header is above the background */
-    }
+
 
     /* Heading and menu */
     .header-pos {
@@ -67,7 +79,7 @@
         height: 1px;
         background-color: white;
         width: 100%;
-        margin: 0 128px;
+        margin: 0 64px;
     }
 
     .title-section {
@@ -76,7 +88,7 @@
         text-align: center;
         color: white;
         padding: 20px 0;
-        margin: 0 128px;
+        margin: 0 64px;
 
 
         /* Space above and below the text */
@@ -110,7 +122,7 @@
         /* Centers items and allows control over spacing with padding */
         flex-wrap: wrap;
         /* Allows boxes to wrap into the next line on smaller screens */
-        margin: 128px 128px;
+        margin: 64px 64px;
         align-items: flex-start;
     }
 
@@ -179,7 +191,7 @@
     .each_profile {
         /* Centers items and allows control over spacing with padding */
         /* Allows boxes to wrap into the next line on smaller screens */
-        margin: 200px 128px;
+        margin: 200px 64px;
     }
 
     .each_profile_heading {
@@ -207,10 +219,10 @@
         justify-content: space-between;
     }
 
-    .big_pic{
+    .big_pic {
         position: relative;
     }
-    
+
 
 
 
@@ -218,30 +230,33 @@
         position: absolute;
         bottom: 15%;
         right: 62%;
-    } 
+    }
 
     .big_pic .description {
         position: absolute;
         bottom: 4%;
         right: 45%;
-    } 
-    
-    .small_pic{
+    }
+
+    .small_pic {
         position: relative;
     }
 
-    .small_pic .name{
+    .small_pic .name {
         position: absolute;
         bottom: 5%;
     }
 
-    .name h1, .description p {
-        color: white; /* Or any color that fits the design */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal shadow, Vertical shadow, Blur, Color */
+    .name h1,
+    .description p {
+        color: white;
+        /* Or any color that fits the design */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Horizontal shadow, Vertical shadow, Blur, Color */
     }
 
     .pic_profile_big {
-        width: 600px;
+        width: 500px;
         height: 400px;
         object-fit: cover;
         border-top-left-radius: 0;
@@ -280,6 +295,7 @@
 
 
     /* Image description */
+
     .image_container h1 {
         color: white;
         /* Adjust based on your design needs */
@@ -305,4 +321,466 @@
         /* Readable text size */
         margin-top: 0;
         padding: 0 16px;
+    }
+
+
+
+    /* Responsive */
+
+    .container {
+        max-width: 1536px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    /* 2xl */
+    @media (max-width: 1536px) {
+        .container {
+            max-width: 1280px;
+        }
+
+        .logo {
+            height: var(--logo);
+            /* Smaller logo */
+        }
+
+        .menu {
+            font-size: var(--menu);
+            /* Smaller menu icon */
+        }
+
+        .horizontal-line {
+            margin: 0 64px;
+        }
+
+        .title-section {
+            margin: 0 64px;
+        }
+
+        .title-section h1 {
+            font-size: var(--title-h1);
+        }
+
+        .title-section p {
+            font-size: var(--title-p);
+        }
+
+
+
+        .profile {
+            margin: 64px 64px;
+        }
+
+        .box {
+            width: 24%;
+            /* Adjusted to ensure fit */
+        }
+
+        .pic_profile {
+            height: var(--pic-profile-height);
+
+        }
+
+        .box h1 {
+            font-size: var(--box-h1);
+            padding: 8px 16px;
+        }
+
+        .box p {
+            font-size: var(--box-p);
+            padding: 0 16px;
+        }
+
+        .each_profile_heading h1 {
+            font-size: 48px;
+        }
+        .each_profile_des {
+            width: 60%;
+        }
+        .each_profile_des p {
+            font-size: 20px;
+        }
+
+        .pic_profile_big {
+            width: var(--pic_profile_big_width);
+            height: var(--pic_profile_big_height);
+        }
+
+        .pic_profile_small {
+            width: var(--pic_profile_small_width);
+            height: var(--pic_profile_small_height);
+        }
+
+        .image_container h1 {
+            margin-top: 12px;
+            font-size: 24px;
+            padding: 8px 16px;
+        }
+
+        .image_container p {
+            font-size: 16px;
+            padding: 0 16px;
+        }
+
+        .big_pic .name {
+            bottom: 15%;
+            right: 62%;
+        }
+
+        .big_pic .description {
+            bottom: 4%;
+            right: 42%;
+        }
+
+        .small_pic .name {
+            bottom: 5%;
+            right: 5%;
+        }
+    }
+
+    /* xl */
+    @media (max-width: 1280px) {
+        .container {
+            max-width: 1024px;
+        }
+
+        .logo {
+            height: calc(0.85*var(--logo));
+        }
+
+        .menu {
+            font-size: calc(0.85*var(--menu));
+        }
+
+        .horizontal-line {
+            margin: 0 calc(0.85*var(--margin-main));
+        }
+
+        .title-section {
+            margin: 0 calc(0.85*var(--margin-main));
+
+        }
+
+        .title-section h1 {
+            font-size: calc(0.85*var(--title-h1));
+        }
+
+        .title-section p {
+            font-size: calc(0.85*var(--title-p));
+        }
+
+        .profile {
+            margin: calc(0.85*var(--margin-main)) calc(0.85*var(--margin-main));
+        }
+
+        .box {
+            width: 24%;
+        }
+
+        .pic_profile {
+            height: calc(0.85*var(--pic-profile-height));
+        }
+
+        .box h1 {
+            font-size: cal(0.85*var(--box-h1));
+        }
+
+        .box p {
+            font-size: cal(0.85*var(--box-p));
+        }
+
+        .each_profile {
+            margin: calc(0.85*var(--margin-each-profile)) calc(0.85*var(--margin-main));
+        }
+
+        .each_profile_heading h1 {
+            font-size: 40px;
+        }
+
+        .each_profile_des {
+            width: 70%;
+        }
+        .each_profile_des p {
+            font-size: 16px;
+        }
+
+        .pic_profile_big {
+            width: cal(0.85*var(--pic_profile_big_width));
+            height: calc(0.85*var(--pic_profile_big_height));
+        }
+
+        .pic_profile_small {
+            width: calc(0.85*var(--pic_profile_small_width));
+            height: calc(0.85*var(--pic_profile_small_height));
+        }
+
+        .image_container h1 {
+            font-size: 16px;
+
+        }
+
+        .image_container p {
+            font-size: 12px;
+        }
+
+        .big_pic .name {
+            bottom: 15%;
+            right: 62%;
+        }
+
+        .big_pic .description {
+            bottom: 4%;
+            right: 42%;
+        }
+
+        .small_pic .name {
+            bottom: 5%;
+            right: 10%;
+        }
+
+
+    }
+
+    /* lg */
+    @media (max-width: 1024px) {
+        .container {
+            max-width: 768px;
+        }
+
+        .logo {
+            height: calc(0.65*var(--logo));
+        }
+
+        .menu {
+            font-size: calc(0.65*var(--menu));
+        }
+
+        .horizontal-line {
+            margin: 0 calc(0.65*var(--margin-main));
+        }
+
+        .title-section {
+            margin: 0 calc(0.65*var(--margin-main));
+
+        }
+
+        .title-section h1 {
+            font-size: calc(0.65*var(--title-h1));
+        }
+
+        .title-section p {
+            font-size: calc(0.65*var(--title-p));
+        }
+
+        .profile {
+            margin: calc(0.65*var(--margin-main)) calc(0.65*var(--margin-main));
+        }
+
+        .box {
+            width: 24%;
+        }
+
+        .pic_profile {
+            height: calc(0.65*var(--pic-profile-height));
+        }
+
+        .box h1 {
+            font-size: 12px;
+        }
+
+        .box p {
+            font-size: 10px;
+        }
+
+        .each_profile {
+            margin: calc(0.65*var(--margin-each-profile)) calc(0.65*var(--margin-main));
+        }
+
+        .each_profile_heading h1 {
+            font-size: 36px;
+        }
+
+        .each_profile_des p {
+            font-size: 16px;
+        }
+
+        .pic_profile_big {
+            width: cal(0.65*var(--pic_profile_big_width));
+            height: calc(0.65*var(--pic_profile_big_height));
+        }
+
+        .pic_profile_small {
+            width: calc(0.65*var(--pic_profile_small_width));
+            height: calc(0.65*var(--pic_profile_small_height));
+        }
+
+        .image_container h1 {
+            font-size: 12px;
+            padding: 8px 10px;    
+        }
+
+        .image_container p {
+            font-size: 10px;
+        }
+
+        .big_pic .name {
+            bottom: 15%;
+            right: 62%;
+        }
+
+        .big_pic .description {
+            bottom: 4%;
+            right: 42%;
+        }
+
+        .small_pic .name {
+            bottom: 5%;
+            right: 15%;
+        }
+    }
+
+    /* md */
+    @media (max-width: 768px) {
+        .container {
+            max-width: 640px;
+        }
+
+                .logo {
+            height: calc(0.53*var(--logo));
+        }
+
+        .menu {
+            font-size: calc(0.53*var(--menu));
+        }
+
+        .horizontal-line {
+            margin: 0 calc(0.53*var(--margin-main));
+        }
+
+        .title-section {
+            margin: 0 calc(0.53*var(--margin-main));
+
+        }
+
+        .title-section h1 {
+            font-size: calc(0.53*var(--title-h1));
+        }
+
+        .title-section p {
+            font-size: calc(0.53*var(--title-p));
+        }
+
+        .profile {
+            margin: calc(0.53*var(--margin-main)) calc(0.53*var(--margin-main));
+        }
+
+        .box {
+            width: 24%;
+        }
+
+        .pic_profile {
+            height: calc(0.53*var(--pic-profile-height));
+        }
+
+        .box h1 {
+            font-size: 10px;
+        }
+
+        .box p {
+            font-size: 10px;
+        }
+
+        .each_profile {
+            margin: calc(0.53*var(--margin-each-profile)) calc(0.53*var(--margin-main));
+        }
+
+        .each_profile_heading h1 {
+            font-size: 30px;
+        }
+
+        .each_profile_des  {
+            width: 80%;
+        }
+
+        .each_profile_des p {
+            font-size: 14px;
+        }
+
+        .pic_profile_big {
+            width: cal(0.53*var(--pic_profile_big_width));
+            height: calc(0.53*var(--pic_profile_big_height));
+        }
+
+        .pic_profile_small {
+            width: calc(0.53*var(--pic_profile_small_width));
+            height: calc(0.53*var(--pic_profile_small_height));
+        }
+
+        .image_container h1 {
+            font-size: 10px;
+            padding: 8px 10px;    
+        }
+
+        .image_container p {
+            font-size: 8px;
+        }
+
+        .big_pic .name {
+            bottom: 15%;
+            right: 62%;
+        }
+
+        .big_pic .description {
+            bottom: 4%;
+            right: 42%;
+        }
+
+        .small_pic .name {
+            bottom: 5%;
+            right: 10%;
+        }
+    }
+
+    /* sm */
+    @media (max-width: 640px) {
+        .container {
+            max-width: 475px;
+        }
+
+        .box {
+            width: 100%;
+            /* 1 box per row */
+        }
+
+        .logo {
+            height: 30px;
+            /* Smaller logo */
+        }
+
+        .menu {
+            font-size: 18px;
+            /* Smaller menu icon */
+        }
+    }
+
+    /* xs */
+    @media (max-width: 475px) {
+        .container {
+            width: 100%;
+        }
+
+        .title-section h1 {
+            font-size: 24px;
+        }
+
+        .title-section p {
+            font-size: 10px;
+        }
+
+        .menu {
+            font-size: 16px;
+            /* Further reduce menu icon size for smallest screens */
+        }
     }
