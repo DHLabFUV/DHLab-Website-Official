@@ -90,6 +90,7 @@
               <div className="each_profile_des">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed eget sapien vel ligula laoreet tristique. Sed consequat, mauris quis tristique condimentum, leo est tempus dolor, nec congue justo odio eu tellus. Maecenas auctor augue ut nunc rutrum, non accumsan libero dictum. Sed eget dolor semper, malesuada est nec, viverra ligula.</p>
             </div>
+            
             <div className="image_container">
               <div className="big_pic">
                 <img src={wwa_main1} alt="President Office " className='pic_profile_big' style={{ filter: 'sepia(1) hue-rotate(180deg) saturate(1.2)  brightness(0.8) ' }} />
