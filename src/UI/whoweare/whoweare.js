@@ -11,14 +11,56 @@ import wwa4 from '../pic/wwa4.png';
 import wwa_main_2 from '../pic/wwa_main_2.png';
 import wwa_main1 from '../pic/wwa_main1.png';
 const Whoweare = () => {
-  const [activePanel, setActivePanel] = useState(0);
+  const [activePresidentOffice, setActivePresidentOffice] = useState(0);
+  const [activeCommunicationOffice, setActiveCommunicationOffice] = useState(0);
+  const [activeProjectDevelopment, setActiveProjectDevelopment] = useState(0);
+  const [activeResearchOffice, setActiveResearchOffice] = useState(0);
   const panels = [
-    { id: 0, img: wwa_main1,content: "Short description about this department" , title: "Person Name", filter: 'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' },
-    { id: 1, img: wwa_main1,content: "Short description about this department" , title: "Person Name", filter: 'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' },
-    { id: 2, img: wwa_main1,content: "Short description about this department" , title: "Person Name", filter: 'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' },
-    { id: 3, img: wwa_main1,content: "Short description about this department" , title: "Person Name", filter: 'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' }
+    {
+      id: 0,
+      img: wwa_main1, 
+      content: "Short description about this department",
+      title: "Person Name",
+      active: activePresidentOffice,
+      toggleActive: () => setActivePresidentOffice(!activePresidentOffice),
+      filter:'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' 
+    },
+    {
+      id: 1,
+      img: wwa_main1,
+      content: "Short description about this department",
+      title: "Person Name",
+      active: activeCommunicationOffice,
+      toggleActive: () => setActiveCommunicationOffice(!activeCommunicationOffice),
+      filter:'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' 
+      
+    },
+    {
+      id: 2,
+      img: wwa_main1,
+      content: "Short description about this department",
+      title: "Person Name",
+      active: activeProjectDevelopment,
+      toggleActive: () => setActiveProjectDevelopment(!activeProjectDevelopment),
+      filter:'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' 
+
+    },
+    {
+      id: 3,
+      img: wwa_main1,
+      content: "Short description about this department",
+      title: "Person Name",
+      active: activeResearchOffice,
+      toggleActive: () => setActiveResearchOffice(!activeResearchOffice),
+      filter:'sepia(1) hue-rotate(180deg) saturate(1.5) brightness(0.8)' 
+
+    }
   ];
-  const handlePanelClick = index => setActivePanel(index);
+
+  const handlePanelPre = index => setActivePresidentOffice(index);
+  const handlePanelCom = index => setActiveCommunicationOffice(index);
+  const handlePanelPro = index => setActiveProjectDevelopment(index);
+  const handlePanelRes = index => setActiveResearchOffice(index);
   return (
     <div className="whoweare">
       <img src={background} className='background' alt="background" />
@@ -93,20 +135,22 @@ const Whoweare = () => {
         <div className="each_profile">
 
           <div className="each_profile_heading">
-            <h1>Communication Office</h1>
+            <h1>President Office</h1>
           </div>
           <div className="each_profile_des">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed eget sapien vel ligula laoreet tristique. Sed consequat, mauris quis tristique condimentum, leo est tempus dolor, nec congue justo odio eu tellus. Maecenas auctor augue ut nunc rutrum, non accumsan libero dictum. Sed eget dolor semper, malesuada est nec, viverra ligula.</p>
           </div>
 
           <div className="image_container">
-            {panels.map(panel => (
+            {panels.map(panel => (  
+              
               <div
                 key={panel.id}
-                className={`panel ${activePanel === panel.id ? 'active' : ''}`}
+                className={`panel ${activePresidentOffice === panel.id ? 'active' : ''}`}
                 style={{ backgroundImage: `url(${panel.img})`, filter: panel.filter }}
-                onClick={() => handlePanelClick(panel.id)}
+                onClick={() => handlePanelPre(panel.id)}
               >
+                
                 <h1>{panel.title}</h1>
                 <p>{panel.content}</p>
               </div>
@@ -128,9 +172,9 @@ const Whoweare = () => {
             {panels.map(panel => (
               <div
                 key={panel.id}
-                className={`panel ${activePanel === panel.id ? 'active' : ''}`}
+                className={`panel ${activeCommunicationOffice === panel.id ? 'active' : ''}`}
                 style={{ backgroundImage: `url(${panel.img})`, filter: panel.filter }}
-                onClick={() => handlePanelClick(panel.id)}
+                onClick={() => handlePanelCom(panel.id)}
               >
                 <h1>{panel.title}</h1>
                 <p>{panel.content}</p>
@@ -142,7 +186,7 @@ const Whoweare = () => {
 
         <div className="each_profile">
           <div className="each_profile_heading">
-            <h1>Communication Office</h1>
+            <h1>Project Development</h1>
           </div>
           <div className="each_profile_des">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed eget sapien vel ligula laoreet tristique. Sed consequat, mauris quis tristique condimentum, leo est tempus dolor, nec congue justo odio eu tellus. Maecenas auctor augue ut nunc rutrum, non accumsan libero dictum. Sed eget dolor semper, malesuada est nec, viverra ligula.</p>
@@ -151,9 +195,9 @@ const Whoweare = () => {
             {panels.map(panel => (
               <div
                 key={panel.id}
-                className={`panel ${activePanel === panel.id ? 'active' : ''}`}
+                className={`panel ${activeProjectDevelopment === panel.id ? 'active' : ''}`}
                 style={{ backgroundImage: `url(${panel.img})`, filter: panel.filter }}
-                onClick={() => handlePanelClick(panel.id)}
+                onClick={() => handlePanelPro(panel.id)}
               >
                 <h1>{panel.title}</h1>
                 <p>{panel.content}</p>
@@ -164,7 +208,7 @@ const Whoweare = () => {
 
         <div className="each_profile">
           <div className="each_profile_heading">
-            <h1>Communication Office</h1>
+            <h1>Research Office</h1>
           </div>
           <div className="each_profile_des">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed eget sapien vel ligula laoreet tristique. Sed consequat, mauris quis tristique condimentum, leo est tempus dolor, nec congue justo odio eu tellus. Maecenas auctor augue ut nunc rutrum, non accumsan libero dictum. Sed eget dolor semper, malesuada est nec, viverra ligula.</p>
@@ -173,9 +217,9 @@ const Whoweare = () => {
             {panels.map(panel => (
               <div
                 key={panel.id}
-                className={`panel ${activePanel === panel.id ? 'active' : ''}`}
+                className={`panel ${activeResearchOffice === panel.id ? 'active' : ''}`}
                 style={{ backgroundImage: `url(${panel.img})`, filter: panel.filter }}
-                onClick={() => handlePanelClick(panel.id)}
+                onClick={() => handlePanelRes(panel.id)}
               >
                 <h1>{panel.title}</h1>
                 <p>{panel.content}</p>

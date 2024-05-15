@@ -1145,3 +1145,40 @@
                     right: 31%;
                 }
             }
+
+
+             /* Profile image scaling and transition setup */
+             .profile .box .pic_profile {
+                transition: transform 0.3s ease;
+                /* Smooth transition effect for scaling */
+                transform-origin: center;
+                /* Ensures the image scales from its center */
+            }
+
+            .profile .box .pic_profile:hover {
+                transform: scale(1.03);
+                /* Scale the image up inside its container */
+                border-top-left-radius: 0;
+                /* Rounded top-left corner */
+                border-top-right-radius: 30px;
+                /* Rounded top-right corner */
+                border-bottom-right-radius: 30px;
+                /* Rounded bottom-right corner */
+                border-bottom-left-radius: 30px;
+                /* Square bottom-left corner */
+            }
+
+            /* Button hovering  */
+            .box h1:hover {
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                /* Larger shadow for a 'lifted' effect */
+                transform: translateY(-2px);
+                /* Slightly raise the element */
+            }
+
+            .image_container h1:hover {
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                /* Larger shadow for a 'lifted' effect */
+                transform: translateY(-2px);
+                /* Slightly raise the element */
+            }
