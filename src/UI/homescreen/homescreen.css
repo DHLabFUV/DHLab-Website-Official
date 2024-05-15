@@ -1,197 +1,1009 @@
+:root {}
+
 /* Background */
 .background {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Extend background for scrolling */
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Use viewport height to fill the screen */
+}
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Heading and menu */
+.header {
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  /* Ensure the header is above the background */
+}
+
+
+
+.header-pos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.menu {
+  height: 40px;
+  font-size: 24px;
+  /* Adjust the size as needed */
+  color: white;
+  /* Choose a color that stands out from your background */
+}
+
+
+/* Bubble and heading */
+/* Rest of the styles */
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin: 64px 64px;
+}
+
+.bubble3d {
+  width: 1200px;
+  height: auto;
+}
+
+.bubble3d img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.text-content h1 {
+  color: white;
+  font-size: 3em;
+  margin: 20px 0 10px 0;
+  /* Adjust spacing as needed */
+  padding-right: 50%;
+
+}
+
+.text-content h2 {
+  color: white;
+  font-size: 1em;
+  padding-right: 50%;
+}
+
+/* Introduction */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.intro-head h1,
+.intro-head h2 {
+  margin: 4px;
+}
+
+.intro-head h2 {
+  font-size: 1.7em;
+  font-weight: 300;
+  color: white;
+}
+
+.intro-head h1 {
+  font-size: 2em;
+  /* Larger size for 'Digital Humanities' */
+  font-weight: 800;
+  /* Heavier weight for 'Digital Humanities' */
+  color: white;
+  /* Color for 'Digital Humanities' */
+
+  margin-top: 0;
+  border: 1px solid white;
+  /* Border width and color */
+  border-radius: 40px;
+  /* Roundness of the corners */
+  padding: 10px 20px;
+  /* Padding inside the border */
+  display: inline-block;
+  /* Necessary for the border and padding to take effect */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  /* Optional: to give it a glow effect */
+}
+
+/* Middle image */
+
+.middleimage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 64px;
+  /* Adjust the vertical spacing around this section */
+  position: relative;
+
+}
+
+.firstcol,
+.secondcol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center align the content for smaller screens */
+  margin: 0 20px;
+  /* Space out the columns */
+}
+
+.firstcol img,
+.secondcol img {
+  height: auto;
+  /* Maintain the aspect ratio of the image */
+  margin-bottom: 20px;
+  /* Spacing between image and text */
+  border-radius: 24px;
+  /* Optional: if you want rounded corners on your images */
+}
+
+.firstcol img {
+  width: 446px;
+  height: 544px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  filter: grayscale(100%) contrast(200%);
+
+}
+
+.secondcol img {
+  width: 446px;
+  height: 544px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  filter: grayscale(100%) contrast(200%);
+}
+
+.firstcol h2 {
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: right;
+  margin: 240px 64px 240px 0;
+
+}
+
+.secondcol h2 {
+
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+  margin: 240px 0 240px 64px;
+
+}
+
+
+/* Footer */
+.footer {
+  margin-top: 128px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer_hsc_container {
+  display: flex;
+}
+
+.footer_hsc_1 {
+  flex: 1;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../pic/footer1.png);
+  background-size: cover;
+  /* Cover the entire container */
+  background-position: center;
+  /* Center the background image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  transition: all 1.1s;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.footer_hsc_1::before {
+  content: "";
+  position: absolute;
+  width: max-content;
+  height: 700px;
+  width: 506px;
+  left: 0;
+  gap: 0px;
+  opacity: 0px;
+  background: linear-gradient(180deg, rgba(0, 86, 251, 0) 0%, #000139 100%);
+
+}
+
+.footer_hsc_1>h1 {
+  color: white;
+  z-index: 1;
+  position: absolute;
+}
+
+
+.footer_hsc_2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  transition: all 1s;
+  z-index: 2;
+  cursor: pointer;
+  overflow: hidden;
+
+
+}
+
+.footer_hsc_2,
+.h1 {
+  color: #020441;
+  background: #E5E5E5;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 62.4px;
+  text-align: center;
+}
+
+.footer_hsc_3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  background-image: url(../pic/footer3.png);
+  background-size: cover;
+  /* Cover the entire container */
+  background-position: center;
+  /* Center the background image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  transition: all 1s;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.footer_hsc_3::after {
+  content: "";
+  position: absolute;
+  width: max-content;
+  height: 700px;
+  width: 506px;
+  right: 0;
+  gap: 0px;
+  opacity: 0px;
+  background: linear-gradient(180deg, rgba(0, 86, 251, 0) 0%, #000139 100%);
+}
+
+.footer_hsc_3>h1 {
+  color: white;
+  z-index: 1;
+}
+
+/* Animation Flip Card */
+.front,
+.back {
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.flip_container:hover>.card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+
+}
+
+.flip_container {
+  width: 446px;
+  height: 544px;
+
+
+}
+
+.card {
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+
+}
+
+.front {
+  width: 446px;
+  height: 544px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  filter: grayscale(100%) contrast(200%);
+
+
+}
+
+.back {
+  background-color: #3a3a3a;
+  /* Your chosen back color */
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 446px;
+  height: 544px;
+  border-radius: 30px;
+
+
+}
+
+.back-content {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Hovering image */
+.footer_hsc_container {
+  overflow: hidden;
+}
+
+.footer_hsc_1:hover {
+  transform: scale(1.05);
+}
+
+.footer_hsc_2:hover {
+  transform: scale(1.05);
+}
+
+.footer_hsc_3:hover {
+  transform: scale(1.05);
+}
+
+
+/* Responsive */
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
   }
-  
-  /* Extend background for scrolling */
-  html, body {
-    height: auto;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Heading and menu */
-  .header {
+
+  .footer_hsc_1::before {
+    content: "";
     position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 10; /* Ensure the header is above the background */
+    width: max-content;
+    height: 700px;
+    width: 512px;
+    left: 0;
+    gap: 0px;
+    opacity: 0px;
+    background: linear-gradient(180deg, rgba(0, 86, 251, 0) 0%, #000139 100%);
   }
-  
-  .header-pos {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px;
-    margin: 10px;
+
+  .footer_hsc_3::after {
+    content: "";
+    position: absolute;
+    width: max-content;
+    height: 700px;
+    width: 512px;
+    right: 0;
+    gap: 0px;
+    opacity: 0px;
+    background: linear-gradient(180deg, rgba(0, 86, 251, 0) 0%, #000139 100%);
   }
-  
-  .logo {
-    height: 40px;
-    width: auto;
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
   }
-  
-  .menu {
-    height: 40px;
-    font-size: 24px; /* Adjust the size as needed */
-    color: white; /* Choose a color that stands out from your background */
-  }
-  
-  
-  /* Bubble and heading */
-  /* Rest of the styles */
-  
+
   .content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Set to the height of the viewport */
-    z-index: 1; /* Ensure it's above the background */
-    margin-top: 50px;
+    z-index: 1;
+    margin: 64px 50px;
   }
-  
+
   .bubble3d {
-    width: 1200px;
+    width: 1000px;
     height: auto;
+    margin-bottom: 100px;
   }
-  
-  .bubble3d img{
-    width: 100%;
-    border-radius: 8px;
-  }
-  .text-content h1 {
-    color: white;
-    font-size: 3em;
-    margin: 20px 0 10px 0; /* Adjust spacing as needed */
-    padding-right: 50%;
-  
-  }
-  
-  .text-content h2 {
-    color: white;
-    font-size: 1em;
-    padding-right: 50%;
-  }
-  
-  /* Introduction */
-  
-  .intro{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .intro-head{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-  }
-  
-  .intro-head h1, .intro-head h2 {
-    margin: 4px;
-  }
-  
-  .intro-head h2 {
-    font-size: 1.7em; 
-    font-weight: 300; 
-    color: white; 
-  }
-  
-  .intro-head h1{
-    font-size: 2em; /* Larger size for 'Digital Humanities' */
-    font-weight: 800; /* Heavier weight for 'Digital Humanities' */
-    color: white; /* Color for 'Digital Humanities' */
-  
-    margin-top: 0;
-    border: 1px solid white; /* Border width and color */
-    border-radius: 40px; /* Roundness of the corners */
-    padding: 10px 20px; /* Padding inside the border */
-    display: inline-block; /* Necessary for the border and padding to take effect */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional: to give it a glow effect */
-  }
-  
-  /* Middle image */
-  
+
   .middleimage {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 128px 0; /* Adjust the vertical spacing around this section */
+    margin: 88px 88px;
     position: relative;
-    
   }
-  
-  .firstcol, .secondcol {
+
+  .footer_hsc_1 {
+    height: 600px;
+  }
+
+  .footer_hsc_1::before {
+    height: 600px;
+  }
+
+  .footer_hsc_2 {
+    height: 600px;
+  }
+
+  .footer_hsc_3 {
+    height: 600px;
+  }
+
+  .footer_hsc_3::after {
+    height: 600px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .content-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align the content for smaller screens */
-    margin: 0 20px; /* Space out the columns */
-  }
-  
-  .firstcol img, .secondcol img {
-    width: 100%; /* Set the width to 100% of the column */
-    max-width: 300px; /* Set a max-width if you want to limit how large it can grow */
-    height: auto; /* Maintain the aspect ratio of the image */
-    margin-bottom: 20px; /* Spacing between image and text */
-    border-radius: 24px; /* Optional: if you want rounded corners on your images */
-  }
-  
-  .firstcol img {
-    width: 100%; /* Adjust width as necessary */
-    max-width: 400px; /* Maximum size of the image */
-    height: auto; /* Maintain the aspect ratio */
-    margin-bottom: 20px; 
-    border-radius: 8px; 
-    transform: translateX(30%)  rotate(-8deg);
-  }
-  .secondcol img {
-    width: 100%; 
-    max-width: 400px;
-    height: auto; 
-    margin-bottom: 20px; 
-    border-radius: 8px; 
-    transform: translateX(-30%)  rotate(5deg);
-  }
-  
-  .firstcol h2,.secondcol h2 {
-    padding: 128px;
-    font-weight: 300; 
-    color: white; 
-    font-size: 1.5em; 
-    line-height: 1.2; 
-    letter-spacing: 0.5px; 
-    max-width: 80%; 
-    margin-left: auto; 
-    margin-right: auto; 
-    text-align: justify;
-  }
-  
-  
-/* Footer */
-.footer {
-    margin-top: 128px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 600px; 
+    justify-content: center;
+    z-index: 1;
+    margin: 64px 42px;
   }
-  
-  .footer img {
-    flex: 1; 
-    max-height: 100%; 
-    object-fit: cover; 
+
+  .bubble3d {
+    width: 800px;
+    height: auto;
+    margin-bottom: 100px;
   }
+
+  .text-content h1 {
+    font-size: 2.4em;
+  }
+
+  .text-content h2 {
+    font-size: 0.9em;
+  }
+
+  .middleimage {
+    margin: 88px 60px;
+  }
+
+  .flip_container {
+    width: 324px;
+    height: 544px;
+  }
+
+  .firstcol img {
+    width: 346px;
+    height: 444px;
+  }
+
+  .secondcol img {
+    width: 346px;
+    height: 444px;
+  }
+
+  .front {
+    width: 346px;
+    height: 444px;
+  }
+
+  .back {
+    width: 346px;
+    height: 444px;
+
+  }
+
+  .back-content {
+    font-size: 16px;
+  }
+
+  .footer_hsc_1 {
+    height: 500px;
+  }
+
+  .footer_hsc_1::before {
+    height: 500px;
+  }
+
+  .footer_hsc_2 {
+    height: 500px;
+  }
+
+  .footer_hsc_3 {
+    height: 500px;
+  }
+
+  .footer_hsc_3::after {
+    height: 500px;
+  }
+}
+
+.footer_hsc_2>h1,
+.footer_hsc_1>h1,
+.footer_hsc_3>h1 {
+  font-size: 36px;
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .content-container {
+    margin: 64px 30px;
+  }
+
+  .bubble3d {
+    width: 600px;
+    height: auto;
+  }
+
+  .text-content h1 {
+    font-size: 1.8em;
+  }
+
+  .text-content h2 {
+    font-size: 0.7em;
+  }
+
+  .middleimage {
+    margin: 88px 60px;
+  }
+
+  .flip_container {
+    width: 267px;
+    height: 443px;
+  }
+
+  .firstcol img {
+    width: 246px;
+    height: 344px;
+  }
+
+  .secondcol img {
+    width: 246px;
+    height: 344px;
+  }
+
+  .firstcol h2 {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: right;
+    margin: 32px 32px 120px 0;
+  }
+
+  .secondcol h2 {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+    margin: 120px 32px 120px 0;
+  }
+
+  .front {
+    width: 246px;
+    height: 344px;
+  }
+
+  .back {
+    width: 246px;
+    height: 344px;
+
+  }
+
+  .back-content {
+    font-size: 16px;
+  }
+
+  .footer_hsc_1 {
+    height: 400px;
+  }
+
+  .footer_hsc_1::before {
+    height: 400px;
+  }
+
+  .footer_hsc_2 {
+    height: 400px;
+  }
+
+  .footer_hsc_3 {
+    height: 400px;
+  }
+
+  .footer_hsc_3::after {
+    height: 400px;
+  }
+
+  .footer_hsc_2>h1,
+  .footer_hsc_1>h1,
+  .footer_hsc_3>h1 {
+    font-size: 30px;
+  }
+
+}
+
+
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .content-container {
+    margin: 64px 24px;
+  }
+
+  .bubble3d {
+    width: 500px;
+    height: auto;
+  }
+
+  .text-content h1 {
+    font-size: 1.5em;
+  }
+
+  .text-content h2 {
+    font-size: 0.6em;
+  }
+
+  .middleimage {
+    margin: 88px 50px;
+  }
+
+  .flip_container {
+    width: 244px;
+    height: 343px;
+  }
+
+  .firstcol h2 {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: right;
+    margin: 120px 32px 120px 0;
+  }
+
+  .footer_hsc_1 {
+    height: 300px;
+  }
+
+  .footer_hsc_1::before {
+    height: 300px;
+  }
+
+  .footer_hsc_2 {
+    height: 300px;
+  }
+
+  .footer_hsc_3 {
+    height: 300px;
+  }
+
+  .footer_hsc_3::after {
+    height: 300px;
+    width: 300px;
+  }
+
+  .footer_hsc_2>h1,
+  .footer_hsc_1>h1,
+  .footer_hsc_3>h1 {
+    font-size: 20px;
+  }
+
+}
+
+
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+
+  .content-container {
+    margin: 64px 20px;
+  }
+
+  .bubble3d {
+    width: 300px;
+    height: auto;
+  }
+
+  .text-content h1 {
+    font-size: 1em;
+  }
+
+  .text-content h2 {
+    font-size: 0.5em;
+  }
+
+
+
+  .firstcol h2 {
+    font-size: 8px;
+    line-height: 1.2;
+    text-align: right;
+    margin: 64px 16px 64px 0;
+  }
+
+  .secondcol h2 {
+    font-size: 8px;
+    line-height: 1.2;
+    text-align: left;
+    margin: 64px 16px 64px 0;
+
+  }
+
+  .middleimage {
+    margin: 88px 36px;
+  }
+
+  .flip_container {
+    width: 146px;
+    height: 252px;
+  }
+
+  .firstcol img {
+    width: 146px;
+    height: 244px;
+  }
+
+  .secondcol img {
+    width: 146px;
+    height: 244px;
+  }
+
+  .front {
+    width: 146px;
+    height: 244px;
+  }
+
+  .back {
+    width: 146px;
+    height: 244px;
+
+  }
+
   
+  .back-content {
+    font-size: 8px;
+  }
+
+
+  .intro-head h2 {
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+  }
+
+  .intro-head h1 {
+    font-size: 1.2em;
+  }
+
+
+  .footer_hsc_1 {
+    height: 200px;
+    
+  }
+
+  .footer_hsc_1::before {
+    height: 200px;
+    width: 140px;
+  }
+
+  .footer_hsc_2 {
+    height: 200px;
+    
+  }
+
+  .footer_hsc_3 {
+    height: 200px;
+    
+  }
+
+  .footer_hsc_3::after {
+    height: 200px;
+    width: 140px;
+    
+  }
+  .footer_hsc_2 > img{
+    width: 200px;
+  }
+
+  .footer_hsc_2>h1,
+  .footer_hsc_1>h1,
+  .footer_hsc_3>h1 {
+    font-size: 16px;
+  }
+
+
+
+}
+
+/* xs */
+@media (max-width: 368px) {
+  .container {
+    width: 100%;
+  }
+
+  .content-container {
+    margin: 64px 20px;
+  }
+
+  .bubble3d {
+    width: 300px;
+    height: auto;
+  }
+
+  .text-content h1 {
+    font-size: 1em;
+  }
+
+  .text-content h2 {
+    font-size: 0.5em;
+  }
+
+
+
+  .firstcol h2 {
+    font-size: 8px;
+    line-height: 1.2;
+    text-align: right;
+    margin: 64px 16px 64px 0;
+  }
+
+  .secondcol h2 {
+    font-size: 8px;
+    line-height: 1.2;
+    text-align: left;
+    margin: 64px 16px 64px 0;
+
+  }
+
+  .middleimage {
+    margin: 88px 36px;
+  }
+
+  .flip_container {
+    width: 146px;
+    height: 252px;
+  }
+
+  .firstcol img {
+    width: 146px;
+    height: 244px;
+  }
+
+  .secondcol img {
+    width: 146px;
+    height: 244px;
+  }
+
+  .front {
+    width: 146px;
+    height: 244px;
+  }
+
+  .back {
+    width: 146px;
+    height: 244px;
+
+  }
+
+  
+  .back-content {
+    font-size: 8px;
+  }
+
+
+  .intro-head h2 {
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+  }
+
+  .intro-head h1 {
+    font-size: 1.2em;
+  }
+
+
+  .footer_hsc_1 {
+    height: 200px;
+    
+  }
+
+  .footer_hsc_1::before {
+    height: 200px;
+    width: 140px;
+  }
+
+  .footer_hsc_2 {
+    height: 200px;
+    
+  }
+
+  .footer_hsc_3 {
+    height: 200px;
+    
+  }
+
+  .footer_hsc_3::after {
+    height: 200px;
+    width: 140px;
+    
+  }
+  .footer_hsc_2 > img{
+    width: 200px;
+  }
+
+  .footer_hsc_2>h1,
+  .footer_hsc_1>h1,
+  .footer_hsc_3>h1 {
+    font-size: 16px;
+  }
+
+
+
+}

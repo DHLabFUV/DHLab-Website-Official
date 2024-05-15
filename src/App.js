@@ -8,8 +8,8 @@ const App = () => {
   return (
     <><div>
       {/* <Footer/> */}
-      {/* <Homescreen/> */}
-      <Whoweare/>
+      <Homescreen/>
+      {/* <Whoweare/> */}
     </div><BrowserRouter>
         <Routes>
           <Route path="/footer" element={<Footer />} />
