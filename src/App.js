@@ -9,7 +9,7 @@ const App = () => {
     <><div>
       {/* <Footer/> */}
       <Homescreen/>
-      {/* <Whoweare/> */}
+      <Whoweare/>
     </div><BrowserRouter>
         <Routes>
           <Route path="/footer" element={<Footer />} />
