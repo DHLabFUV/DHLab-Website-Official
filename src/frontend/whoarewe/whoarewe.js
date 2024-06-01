@@ -67,12 +67,7 @@ const Whoweare = () => {
 
       <div className="container">
         {/* Header */}
-        <div className='header-pos'>
-          <img src={logo} className="logo" alt="Digital Humanities Lab logo" />
-          <div className="menu">
-            <FontAwesomeIcon icon={faBars} />
-          </div>
-        </div>
+        
 
         {/* Top Horizontal Line */}
         <div className="line">

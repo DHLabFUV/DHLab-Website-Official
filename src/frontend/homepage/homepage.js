@@ -12,15 +12,6 @@ const Homescreen = () => {
 
         <div className='homescreen_container'>
             <img src={background} className='background' alt="background" />
-            <div className="header">
-                <div className='header-pos'>
-                    <img src={logo} className="logo" alt="Digital Humanities Lab logo" />
-                    {/* Add content here for the menu */}
-                    <div className="menu">
-                        <FontAwesomeIcon icon={faBars} />
-                    </div>
-                </div>
-            </div>
             <div className='content-container'>
                 <div className="bubble3d">
                     <img src={bubble3d} alt="3D Bubble " />
