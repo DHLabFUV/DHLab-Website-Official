@@ -38,35 +38,6 @@ body {
 }
 
 
-
-/* Heading and menu */
-.header-pos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 64px;
-
-}
-
-.logo {
-    height: 40px;
-    width: auto;
-}
-
-.menu {
-    height: 40px;
-    font-size: 24px;
-    /* Adjust the size as needed */
-    color: white;
-    /* Choose a color that stands out from your background */
-}
-
-
-
-
-
 /* Lines and Text Styling */
 
 .line {
@@ -87,34 +58,22 @@ body {
     justify-content: space-between;
     text-align: center;
     color: white;
-    padding: 20px 0;
-    margin: 0 64px;
 
-
-    /* Space above and below the text */
 }
 
 .title-section h1 {
     margin: 0;
     padding: 0;
-    font-size: 64px;
-
-    /* Adjust size as needed */
+    font-size: 3vw;
 }
 
 .title-section p {
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 2vw;
     text-align: right;
     /* Adjust size as needed */
 }
-
-
-
-
-
-/* Profile */
 
 .profile {
     display: flex;
