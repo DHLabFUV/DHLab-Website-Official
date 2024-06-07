@@ -74,7 +74,8 @@ const Archives = () => {
         <p className="intro">With dedication and love, we present our project to help raise public awareness of Vietnam product and Vietnam soul</p>
         <ToggleList items={items} />
       </div>
-    </div><Footer /></>
+    </div>
+    <Footer /></>
   );
 }
 
