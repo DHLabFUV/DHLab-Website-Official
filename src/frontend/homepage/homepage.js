@@ -7,6 +7,7 @@ import bubble3d from '../pic/bubble3d.png';
 import lefthand from '../pic/lefthand.jpg';
 import righthand from '../pic/righthand.jpg';
 import footer2 from '../pic/footer2.png';
+
 const Homescreen = () => {
     return (
 
