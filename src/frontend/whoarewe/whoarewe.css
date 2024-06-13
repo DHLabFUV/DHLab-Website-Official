@@ -19,7 +19,7 @@
 /* Background */
 
 .background {
-    position: fixed;
+    position: flex;
     top: 0;
     left: 0;
     width: 100vw;
@@ -50,15 +50,15 @@ body {
     height: 1px;
     background-color: white;
     width: 100%;
-    margin: 0 64px;
+    margin-top: 20%;
 }
 
 .title-section {
     display: flex;
     justify-content: space-between;
+    margin: 10%;
     text-align: center;
     color: white;
-
 }
 
 .title-section h1 {
