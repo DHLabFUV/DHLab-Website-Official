@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import './whoarewe.css';
 import background from '../pic/background.png';
-import logo from '../pic/logo.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import wwa1 from '../pic/wwa1.png';
 // import wwa2 from '../pic/wwa2.png';
 import wwa3 from '../pic/wwa3.png';

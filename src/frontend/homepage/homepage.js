@@ -1,8 +1,5 @@
 import background from '../pic/background.png';
-import logo from '../pic/logo.png';
 import './homepage.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import bubble3d from '../pic/bubble3d.png';
 import lefthand from '../pic/lefthand.jpg';
 import righthand from '../pic/righthand.jpg';
