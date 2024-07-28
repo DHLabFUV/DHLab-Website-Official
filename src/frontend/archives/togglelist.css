@@ -10,7 +10,7 @@ ul {
   padding: 0;
 }
 
-li {
+.toggle-list li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0%;
@@ -22,15 +22,14 @@ li {
   cursor: pointer;
   border-bottom: 1px solid #ccc;
   transition: padding 0.3s ease;
-}
+  pointer-events: auto; /* Ensure that pointer events are enabled */
 
-.toggle-list li {
   cursor: pointer;
   border-bottom: 1px solid #ccc;
   transition: all 0.3s ease; 
 }
 
-li.active {
+.toggle-list li.active {
   padding: 3%;
 }
 

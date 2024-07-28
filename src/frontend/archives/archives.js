@@ -8,7 +8,6 @@ import image3 from '../pic/6.jpg';
 import bg1 from '../pic/1.jpg';
 import bg2 from '../pic/2.jpg';
 import bg3 from '../pic/3.jpg';
-import Footer from '../footer/footer';
 
 const Archives = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // State to track the current image index
@@ -75,8 +74,8 @@ const Archives = () => {
         <ToggleList items={items} />
       </div>
     </div>
-    <Footer /></>
+    </>
   );
 }
 
-export default Archives;
+export default Archives
