@@ -5,13 +5,12 @@ body {
 }
 
 .background {
-  /* Set the background image or color */
   background-image: url('../pic/1.jpg'); /* or background-color: #XXXXXX; */
   background-size: cover; /* Ensure the background covers the entire area */
   background-position: center; /* Center the background image */
   height: 100vh; /* Set the height to the viewport height */
   position: relative;
-
+  pointer-events: none;
 }
 
 .content{
