@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'; //stylesheet
 import Navbar from './frontend/navbar/navbar';
 import WhoAreWe from './frontend/whoarewe/whoarewe';
@@ -17,7 +17,7 @@ const App = () => {
           <Route path="/whoarewe" element={<WhoAreWe />} />
           <Route path="/archives" element={<Archives />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );

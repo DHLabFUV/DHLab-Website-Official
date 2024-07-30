@@ -1,8 +1,13 @@
 body{
-    font-family: "Epilogue", sans-serif;
-    font-weight: 600;
-    font-size: 24;
+  background: radial-gradient(ellipse at center, rgba(0, 15, 98, 1), rgba(4, 50, 141, 1));
+  opacity: 100%;
+  color: #fff;
+  box-align: bottom;
+  text-align: center;
+  padding: 0%;
+  width: 100%;
 }
+
 
 .grid-container {
     display: flex;

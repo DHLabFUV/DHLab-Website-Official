@@ -67,14 +67,11 @@ const Archives = () => {
   ];
 
   return (
-    <><div className='background' style={{ backgroundImage: `url(${currentImage})` }}>
-      <div className="content">
-        <h1 className="headline">10 projects</h1>
-        <p className="intro">With dedication and love, we present our project to help raise public awareness of Vietnam product and Vietnam soul</p>
-        <ToggleList items={items} />
-      </div>
-    </div>
-    </>
+  <><div className='background' style={{ backgroundImage: `url(${currentImage})` }} /><div className="content">
+      <h1 className="headline">10 projects</h1>
+      <p className="intro">With dedication and love, we present our project to help raise public awareness of Vietnam product and Vietnam soul</p>
+      <ToggleList items={items} />
+    </div></>
   );
 }
 

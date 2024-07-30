@@ -9,7 +9,6 @@ const Footer = () => {
     color: '#fff',
     textAlign: 'center',
     padding: '10%',
-    position: 'bottom',
     bottom: 0,
     width: 'auto',
   };
