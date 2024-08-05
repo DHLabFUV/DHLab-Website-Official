@@ -10,6 +10,7 @@ import chiTuyenVo from '../pic/chiTuyenVo.png';
 import chiVanLe from '../pic/chiVanLe.png';
 // import wwa_main_2 from '../pic/wwa_main_2.png';
 import wwa_main1 from '../pic/wwa_main1.png';
+
 const Whoweare = () => {
   const [activePresidentOffice, setActivePresidentOffice] = useState(0);
   const [activeCommunicationOffice, setActiveCommunicationOffice] = useState(0);

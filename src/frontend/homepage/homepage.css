@@ -83,7 +83,7 @@ body {
 }
 
 .bubble3d {
-  width: 1200px;
+  width: 100%;
   height: auto;
 }
 
@@ -94,17 +94,18 @@ body {
 
 .text-content h1 {
   color: white;
-  font-size: 3em;
+  font-size: 3vw;
   margin: 20px 0 10px 0;
-  /* Adjust spacing as needed */
   padding-right: 50%;
 
 }
 
 .text-content h2 {
   color: white;
-  font-size: 1em;
-  padding-right: 50%;
+  font-size: 1.3vw;
+  padding-right: 20%;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /* Introduction */
@@ -129,13 +130,21 @@ body {
 }
 
 .intro-head h2 {
-  font-size: 1.7em;
+  font-size: 1.75vw;
   font-weight: 300;
   color: white;
 }
 
+.intro-head h3{
+  padding: 0% 10% 0%;
+  text-align: center;
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 .intro-head h1 {
-  font-size: 2em;
+  font-size: 2vw;
   /* Larger size for 'Digital Humanities' */
   font-weight: 800;
   /* Heavier weight for 'Digital Humanities' */
@@ -228,7 +237,7 @@ body {
 
 /* Footer */
 .footer {
-  margin-top: 128px;
+  margin-top: 88px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -468,7 +477,7 @@ body {
   .bubble3d {
     width: 1000px;
     height: auto;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
 
   .middleimage {
@@ -587,7 +596,7 @@ body {
 .footer_hsc_2>h1,
 .footer_hsc_1>h1,
 .footer_hsc_3>h1 {
-  font-size: 36px;
+  font-size: 20px;
 }
 
 /* md */
