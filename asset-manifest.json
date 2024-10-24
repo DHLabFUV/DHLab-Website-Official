@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DHLab-Website-Official/static/css/main.6ac0ce0a.css",
-    "main.js": "/DHLab-Website-Official/static/js/main.669d74c9.js",
+    "main.css": "/DHLab-Website-Official/static/css/main.d8da1e04.css",
+    "main.js": "/DHLab-Website-Official/static/js/main.8c11e6b8.js",
     "static/js/453.9549352d.chunk.js": "/DHLab-Website-Official/static/js/453.9549352d.chunk.js",
     "static/media/3.jpg": "/DHLab-Website-Official/static/media/3.766f6daff124aa0dbc2b.jpg",
     "static/media/2.jpg": "/DHLab-Website-Official/static/media/2.35f046c809307e40174a.jpg",
@@ -23,12 +23,12 @@
     "static/media/footer1.png": "/DHLab-Website-Official/static/media/footer1.f9c6233ab3debd80d333.png",
     "static/media/footer3.png": "/DHLab-Website-Official/static/media/footer3.d8ea151b85e2d6c411e4.png",
     "index.html": "/DHLab-Website-Official/index.html",
-    "main.6ac0ce0a.css.map": "/DHLab-Website-Official/static/css/main.6ac0ce0a.css.map",
-    "main.669d74c9.js.map": "/DHLab-Website-Official/static/js/main.669d74c9.js.map",
+    "main.d8da1e04.css.map": "/DHLab-Website-Official/static/css/main.d8da1e04.css.map",
+    "main.8c11e6b8.js.map": "/DHLab-Website-Official/static/js/main.8c11e6b8.js.map",
     "453.9549352d.chunk.js.map": "/DHLab-Website-Official/static/js/453.9549352d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ac0ce0a.css",
-    "static/js/main.669d74c9.js"
+    "static/css/main.d8da1e04.css",
+    "static/js/main.8c11e6b8.js"
   ]
 }
