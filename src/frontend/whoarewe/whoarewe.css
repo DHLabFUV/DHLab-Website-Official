@@ -152,8 +152,6 @@ body {
 }
 
 
-
-
 /* Each Profile */
 
 .each_profile {
@@ -308,6 +306,7 @@ body {
     /* Or any color that fits the design */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /* Horizontal shadow, Vertical shadow, Blur, Color */
+    font-size: 4rem;
 }
 
 .pic_profile_big {
@@ -381,6 +380,7 @@ body {
     /* Readable text size */
     margin-top: 0;
     padding: 0 16px;
+    line-height: 1.5;
 }
 
 
@@ -391,12 +391,13 @@ body {
     max-width: 1536px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.5;
     /* padding-left: 0.5rem;
     padding-right: 0.5rem; */
 }
 
 /* 2xl */
-@media (max-width: 1536px) {
+@media (min-width: 1536px) {
     .container {
         max-width: 1280px;
     }
