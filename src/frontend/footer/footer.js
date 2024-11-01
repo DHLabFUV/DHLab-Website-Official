@@ -18,7 +18,7 @@ const Footer = () => {
       <div className='container'>
         <div className='sayhello-container'>
           {/* Use <a> tag for external link */}
-          <a href='https://www.facebook.com/' className='link'>Say Hello</a>
+          <h1>Say Hello</h1>
           {/* Add social media icons */}
         </div>
         <div className='grid-container'>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="social-icons">
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/trungtamnghiencuuvietnam">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a href="https://twitter.com/">

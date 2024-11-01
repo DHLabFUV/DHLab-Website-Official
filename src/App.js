@@ -9,7 +9,7 @@ import Footer from './frontend/footer/footer';
 
 const App = () => {
   return (
-    <BrowserRouter basename='/DHLab-Website-Official'>
+    <BrowserRouter basename='/'>
       <div className="App">
         <Navbar />
         <Routes>

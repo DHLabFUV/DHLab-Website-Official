@@ -419,6 +419,7 @@ body {
 
     .title-section {
         margin: 0 64px;
+        margin-top: 5rem;
     }
 
     .title-section h1 {
@@ -507,6 +508,7 @@ body {
 /* xl */
 @media (max-width: 1280px) {
     .container {
+        /* background-color: red; */
         max-width: 1024px;
     }
 
@@ -524,6 +526,7 @@ body {
 
     .title-section {
         margin: 0 calc(0.85*var(--margin-main));
+        margin-top: 5rem;
 
     }
 
@@ -635,6 +638,7 @@ body {
 
     .title-section {
         margin: 0 calc(0.65*var(--margin-main));
+        margin-top: 5rem;
 
     }
 
@@ -730,6 +734,7 @@ body {
 /* md */
 @media (max-width: 768px) {
     .container {
+        /* background-color: red; */
         max-width: 640px;
     }
 
@@ -747,6 +752,7 @@ body {
 
     .title-section {
         margin: 0 calc(0.53*var(--margin-main));
+        margin-top: 5rem;
 
     }
 
@@ -863,6 +869,7 @@ body {
 
     .title-section {
         margin: 0 20px;
+        margin-top: 4rem;
         /* Reduce side margins */
         flex-direction: column;
         padding: 10px 0;
